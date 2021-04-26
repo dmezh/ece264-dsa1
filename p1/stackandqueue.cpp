@@ -50,6 +50,7 @@ class BasicList {
         virtual ~BasicList() { // maybe more efficient than pop_start() b/c we don't care about the data
             Node* prev = head;
             while (head) {
+                prev = head;
                 head = head->next;
                 delete prev;
             }
