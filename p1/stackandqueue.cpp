@@ -214,7 +214,7 @@ void do_command(std::list<BasicList<T> *>& metalist, std::string_view cmd, // va
 // get file path input from the user
 std::string get_path(std::string_view file_type) {
     std::string path;
-    std::cout << "Please enter the name of the " << file_type << "file: ";
+    std::cout << "Please enter the name of the " << file_type << " file: ";
     std::cin >> path;
     return path;
 }
